@@ -220,7 +220,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 10px;
+    margin: 10px 40px;
 }
 
 nav li a {
@@ -232,7 +232,7 @@ nav li a {
 }
 
 .bg-nav {
-    background: #fff;
+    background: #69c5e8;
     border-bottom: 1px solid #f3f3f3
 }
 
@@ -444,6 +444,7 @@ a.active {
     display: inline-block;
     color: #60606e;
     padding: 0 10px;
+    font-size: 20px;
     margin: 0 14px;
     -webkit-transition: all .2s ease-in-out .2s;
     transition: all .2s ease-in-out .2s;
@@ -459,6 +460,7 @@ a.active {
     padding: 0px 20px;
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .portfolio_filter {

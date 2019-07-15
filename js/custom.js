@@ -104,62 +104,32 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#demo01,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
-    $("#demo02").animatedModal2()
-    // Contact Form 	
-
-    // validate contact form
-    $(function () {
-        $('#contact-form').validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                email: {
-                    required: true
-                },
-                phone: {
-                    required: false
-                },
-                message: {
-                    required: true
-                }
-
-            },
-            messages: {
-                name: {
-                    required: "This field is required",
-                    minlength: "your name must consist of at least 2 characters"
-                },
-                email: {
-                    required: "This field is required"
-                },
-                message: {
-                    required: "This field is required"
-                }
-            },
-            submitHandler: function (form) {
-                $(form).ajaxSubmit({
-                    type: "POST",
-                    data: $(form).serialize(),
-                    url: "process.php",
-                    success: function () {
-                        $('#contact :input').attr('disabled', 'disabled');
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor', 'default');
-                            $('#success').fadeIn();
-                        });
-                    },
-                    error: function () {
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $('#error').fadeIn();
-                        });
-                    }
-                });
-            }
-        });
-
+    $("#demo01").animatedModal({
+      modalTarget: 'animatedModal'
     });
+    $("#demo02").animatedModal({
+      modalTarget: 'animatedModal2'
+    });
+    $("#demo03").animatedModal({
+      modalTarget: 'animatedModal3'
+    });
+    $("#demo04").animatedModal({
+      modalTarget: 'animatedModal4'
+    });
+    $("#demo05").animatedModal({
+      modalTarget: 'animatedModal5'
+    });
+    $("#demo06").animatedModal({
+      modalTarget: 'animatedModal6'
+    });
+    $("#demo07").animatedModal({
+      modalTarget: 'animatedModal7'
+    });
+    $("#demo08").animatedModal({
+      modalTarget: 'animatedModal8'
+    });
+    $("#demo09").animatedModal({
+      modalTarget: 'animatedModal9'
+    });
+
 });
