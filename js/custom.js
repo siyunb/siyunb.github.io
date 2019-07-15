@@ -21,6 +21,7 @@ $(document).ready(function () {
     $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
 
+
         sections.each(function () {
             var top = $(this).offset().top - nav_height,
                 bottom = top + $(this).outerHeight();
