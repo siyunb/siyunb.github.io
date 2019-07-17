@@ -424,27 +424,63 @@
                         </table>
                         <br>
                         <p class="demo">More detailed data examples and the code of this network data acquisition are stored in this <a href="https://github.com/siyunb/Wos-Crawler"><i>code repository</i></a>.</p>
-                        <br>                        
-                        <table align="center" width="900px">
+                        <br> 
+                        <p class="demo"><font class="biaoti">Creation and cleaning of data structure.</font> The feature of every literature was saved and then extracted for creating the data nodes——journal node, paper node and writer node respectively. For the data structure of attributes of every node, I saved it by the json tree structure so as to be called conveniently. What’s more, normalization cleaning and disposal are used in textual data to keep the data format identical for modeling.</p>
+                        <br>   
+                        <p class="demo"><font class="biaoti">The construction for heterogeneous network.</font>  There are three layers in the heterogeneous network including journal layer, paper layer and writer layer. Among the layers, some adjacent edges with same type exist. The adjacent edges in paper layer represent relation of mutual reference and the edges in writer layer represent cooperative relation. Between the journal layer and paper layer there exist adjacent edge representing relation, and so do the paper layer and writer layer. In such way, a three-dimensional network of statistics research was formed. The detailed network model is illustrated in following figure. </p>
+                        <br>                                           
+                        <table align="center" width="700px">
                             <tr>
-                                <td><center><img src="img/portfolio/NMRre.jpg" style="width:900px;height:300px;"></center></td>
+                                <td><center><img src="img/portfolio/Network structure.jpg" style="width:700px;height:400px;"></center></td>
                             <tr>
                             <tr>
-                                <td><center>The analysis result of NMR</center></td>
+                                <td><center>Heterogeneous network in this paper</center></td>
                             </tr>    
                         </table>
-                        <br>                        
-                        <table align="center" width="900px">
+                        <br> 
+                        <p class="demo"><font class="biaoti"> The community detection of journal layer based on LDA topic model.</font>This process is for the community detection in the journal layer merely. Each journal node contains the abstract information of these papers published in it from 2013 to 2018. The corpus and dictionary of all literatures are established for modeling LDA topic model. According to membership degree of every journal node for each theme, the research field, namely, the community for every journal will be detected. The result of LDA is illustrated in the following figure.</p>      
+                        <br>                                         
+                        <table align="center" width="800px">
                             <tr>
-                                <td><center><img src="img/portfolio/GCMSre.jpg" style="width:900px;height:300px;"></center></td>
+                                <td><center><img src="img/portfolio/LDA.jpg" style="width:800px;height:500px;"></center></td>
                             <tr>
                             <tr>
-                                <td><center>The analysis result of GC-MS</center></td>
+                                <td><center>The result of LDA</center></td>
                             </tr>    
                         </table>
                         <br>
-                        <p class="demo">The applied research can guide the picking period of Angelica sinensis and the extraction of effective medicinal ingredients. Finally, this bachelor paper entitled Metabolic Analysis Based on Fingerprint of Angelica Sinensis stood out among 350 papers of the whole college and later incorporated in the Excellent Graduation Thesis Collection of 2017 Undergraduates of Central South University.</p>
+                        <p class="demo"><font class="biaoti">The community detection based on label propagation model in paper layer.</font>According to the adjacent edge effect existing in interlayers, the paper layer is divided into several paper sub-networks firstly. The community detection will be implemented in these sub-networks by parallel operation in these sub-networks. There is information in these sub-networks, like keyword, abstract and publisher and so on. Referring to these attributes, the similarity among the nodes was defined and the probability of propagation among the nodes was calculated further with those similarity. At last, the community detection should be implemented by propagation probability matrix of label propagation algorithm. The result of community detection in this layer is shown in following picture. </p>
                         <br> 
+                         <table align="center" width="800px">
+                            <tr>
+                                <td><center><img src="img/portfolio/paperlayer.jpg" style="width:800px;height:500px;"></center></td>
+                            <tr>
+                            <tr>
+                                <td><center>The paper layer has been divided into several paper sub-networks according to the LDA result</center></td>
+                            </tr>    
+                        </table>
+                        <br>   
+                        <br> 
+                         <table align="center" width="900px">
+                            <tr>
+                                <td><center><img src="img/portfolio/community detection in paper layer.gif" style="width:900px;height:300px;"></center></td>
+                            <tr>
+                            <tr>
+                                <td><center>the result of community detection in paper layer</center></td>
+                            </tr>    
+                        </table>
+                        <br>  
+                        <p class="demo"><font class="biaoti">The community detection based on label propagation model in author layer.</font>According to the adjacent edge effect existing in interlayers, the author layer is divided into several author sub-networks firstly. The community detection will be implemented in these sub-networks by parallel operation in these subnets. There is information in each node of these sub-networks, including keyword, abstract and university and so on. Referring to these attributes, the similarity among the nodes was defined and the probability of propagation among the nodes was calculated further. At last, the community detection should be implemented by propagation probability matrix of label propagation algorithm.</p>
+                        <br> 
+                        <table align="center" width="800px">
+                            <tr>
+                                <td><center><img src="img/portfolio/authorlayer.jpg" style="width:800px;height:500px;"></center></td>
+                            <tr>
+                            <tr>
+                                <td><center>The result of community detection in author layer</center></td>
+                            </tr>    
+                        </table>
+                        <br>                                                
                         <p class="demo">To get more information about this project, please click <a href="https://github.com/siyunb"><i>here</i></a> to visit its code repository in github.</p> 
                         <br>
                         <br>
