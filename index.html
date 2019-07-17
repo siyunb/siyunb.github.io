@@ -395,44 +395,35 @@
             <div class="container">
                 <div class="portfolio-padding">
                     <div class="col-md-10 col-md-offset-1">
-                        <h2>Community Detection Based on <br /> Heterogeneous Network of Statistical Researches</h2>
+                        <h2>Community Detection Based on <br />Heterogeneous Network of Statistical Researches</h2>
                         <div class="h-50"></div>
-                        <p class="demo">Angelica refers to the dry roots of Angelica sinensis, an herb of Chinese traditional medicine. It has a widely curative effect in modern medicine. Because the internal chemistry components of Angelica sinensis are very complex and are lastly affected by different environmental factors and human factors during it growth cycle, it is difficult to control the plucking time and its dose effect. In my bachelor thesis, a systematic research on Angelica sinensis’ metabolomics was conducted at 27 samples in the different growth stages from Minxian, Gansu Province.</p>
+                        <h3>1. Research Background</h3>
+                        <p class="demo">Heterogeneous network is different from homogeneous network, which converts the network information extracted from the complex systems into the different types of nodes and links. At present, the majority of community detection methods are worked on homogeneous networks and such a hypothesis that the nodes and the links of a certain network structure are all the identical type is made. That hypothesis provides much convenience for the study on the community detection method. Compared with the community detection in homogeneous networks, the community detection based on heterogeneous networks can find out more association information and more accurate community structure. The research object of this paper is just based on the heterogeneous network which is constructed by using the academic paper data in the statistics research field.</p>
                         <br />
-                        <div style="text-align:center;margin-bottom:1em;line-height:300%;">
-                           <img alt="tp" src="img/portfolio/当归.jpg" align="absbottom" style="width:600px;height:400px;" /><br />
-                           <span >当归</span>
-                        </div>
-                        <p class="demo">The bio-fingerprint information of Angelica sinensis in different growth period was extracted by means of H-NMR and GC-MS. The experimental results of H-NMR and GC-MS are shown in following figures. The statistical test, such as variance analysis and t-test, was implemented to distinguish the chemical characteristic peaks and chemical retention time of Angelica sinensis which varies greatly during the growth period. </p>
+                        <h3>2. Research methods</h3>
+                        <p class="demo"><font class="biaoti">Data collection of statistical research literatures: </font> by using “beautifulsoup” and “selenium” module in python, I dynamically crawled and collected all literature data about statistics and probability at the database of “web of science” to construct the thesis topic network. </p>
                         <br>
-                        <table align="center" width="900px">
+                        <table align="center" width="650px">
                             <tr>
-                                <td align="center"><img src="img/portfolio/reofnmr.jpg" style="width:400px;height:300px;"></td>
-                                <td align="center" width="50px">&nbsp;&nbsp;&nbsp;</td>
-                                <td align="center"><img src="img/portfolio/reofgcms.jpg"  style="width:400px;height:300px;"></td>
-                            </tr>
+                                <td><center><img src="img/portfolio/webofscience.jpg" style="width:650px;height:450px;"></center></td>
                             <tr>
-                                <td><center>The result of H-NMR</center></td>
-                                <td align="center" width="50px">&nbsp;&nbsp;&nbsp;</td>
-                                <td><center>The result of GC-MS</center></td>
-                            </tr>
+                            <tr>
+                                <td><center>Information page in “Web of Science”</center></td>
+                            </tr>    
                         </table>
                         <br>
-                        <p class="demo">In order to discover the dynamic accumulation of angelica metabolites and explore the metabolic components which are sensitive to the changes of years in its growth cycle, orthogonal partial least squares discriminant analysis (OPLS-DA) is used to analyze the integral relative content in spectral data systematically. By comparing with database, the characteristic signal peaks of linoleic acid, Angelica polysaccharide, ligustilide, ferulic acid, Angelica lactone A, butenyl phthalide and 3-n-Butylphthalide were identified on the H-NMR fingerprint. According to the Universal Database of Gas Chromatographic Retention Index, furthermore, we identified about 44 volatile compounds from the volatile oil of Angelica sinensis. Identification results are shown in following figures.</p>
+                        <p class="demo">Because Impact Factor of some journals is too small, those journals are unrepresentative. Therefore, the textual data in this thesis are fixed in those papers from 27 famous statistical and probabilistic journals which have high IF and top rank in JCR. Those selected journals include Annals of Statistics, American Statistician, Biometrics, Journal of Statistical Software, etc. And every paper in those journals has many variables, such as “authors”, “ citation count”,” references”,”abstract”,etc. A sample data is shown in the following chart. </p>
                         <br>
-                        <br>
-                        <table align="center"  width="900px">
+                        <table align="center" width="800px">
                             <tr>
-                                <td align="center"><img src="img/portfolio/NMR.jpg" style="width:400px;height:300px;"></td>
-                                <td align="center" width="50px">&nbsp;&nbsp;&nbsp;</td>
-                                <td align="center"><img src="img/portfolio/GCMS.jpg" style="width:400px;height:300px;"></td>
-                            </tr>
+                                <td><center><img src="img/portfolio/sample data.jpg" style="width:800px;height:400px;"></center></td>
                             <tr>
-                                <td colspan="3"><center>Substance Attribution of spectral data</center></td>
-                            </tr>
+                            <tr>
+                                <td><center>A sample data</center></td>
+                            </tr>    
                         </table>
                         <br>
-                        <p class="demo">The experiment results show that: Z-ligustilide, ferulic acid, and other three components are active pharmaceutical ingredients , and the changes of  polysaccharide,15 alkanol, n-butylidenephthalide and other nonpharmacodynamic components are also obvious in three years of growth period. Therefore those compounds can be the symbolic chemical compositions used to evaluate the quality of angelica and control the harvest time; In the experimental process, we had found that the medicinal ingredients in angelica sinensis don’t reach the maximum content in the traditional harvest time, but the ratio between the Z-ligustilide and other ingredients, such as n-butylidenephthalide, reaches a reasonable level.</p>
+                        <p class="demo">More detailed data examples and the code of this network data acquisition are stored in this <a href="https://github.com/siyunb/Wos-Crawler"><i>code repository</i></a>.</p>
                         <br>                        
                         <table align="center" width="900px">
                             <tr>
